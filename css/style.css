@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+}
+.container {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    min-height: 100vh;
+}
+.project {
+    padding: 50px;
+}
+.project .logo {
+    padding: 10px;
+}
+.project .logo img {
+    width: 230px;
+}
+.project .landing-page {
+    display: flex;
+    gap: 70px;
+    margin-top: 40px;
+}
+
+.project .landing-page .image img {
+    max-width: 100%;
+}
+.project .landing-page .info {
+    padding: 10px;
+    color: white;
+}
+.project .landing-page .info .title {
+    font-size: 40px;
+    margin: 30px 0;
+    letter-spacing: 1px;
+    text-wrap: balance;
+
+}
+.project .landing-page .info .description {
+    line-height: 1.7;
+    text-wrap: balance;
+}
+.project .landing-page .info .register {
+    margin-top: 30px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 40px;
+    background: white;
+    color: hsl(257, 40%, 49%);
+    border: 2px solid hsl(257, 40%, 49%);
+    font-size: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
+    transition: 0.3s;
+}
+.project .landing-page .info .register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.container .project .social-media {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    color: white;
+    margin-top: 25px;
+}
+.container .project .social-media span {
+    padding: 13px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .project .social-media span:hover {
+    background-color: white;
+    color: black;
+}
+@media(max-width:1240px) {
+    .container .project .landing-page {
+        flex-direction: column;
+    }
+    .container .project .landing-page .info {
+        text-align: center;
+    }
+    .project {
+        padding: 20px;
+    }
+    .container .project .landing-page .info .title , .container .project .landing-page .info .description {
+        text-wrap: none;
+    }
+    .container .project .landing-page .image {
+        margin: 0 auto;
+    }
+    .container .project .social-media {
+        justify-content: center;
+    }
+}
+ @media(min-width:1240px) {
+    .container .project .landing-page .image img {
+        max-width: 1000px;
+        
+    }
+} 
